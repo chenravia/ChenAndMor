@@ -1,6 +1,8 @@
 <html>
-<head><title>First JSP</title></head>
+<head><title>Final Project JSP</title></head>
 <body>
+<form action="Devops Grade" method="post">
+			<table style="with: 50%">
 		<tr>
 		<td>Your grade:</td>
 		<td><input type="text" name="your_grade" /></td>
