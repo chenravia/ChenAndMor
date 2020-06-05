@@ -1,28 +1,36 @@
 <html>
-<head><title>Final Project JSP</title></head>
+<head>
+  <title>Query about the course</title>
+</head>
 <body>
-<form action="Devops Grade" method="post">
-			<table style="with: 50%">
-		<tr>
-		<td>Your grade:</td>
-		<td><input type="number" name="your_grade" /></td>
-		</tr>
-		
-		<input type="submit" value="Submit" /></form>
-		
-		
+  <h3>What is the name of the lecturer?:</h3>
+  <form method="get">
+    <input type="radio" name="lecturer" value="Mor">first
+    <input type="radio" name="lecturer" value="Ziv">second
+    <input type="radio" name="lecturer" value="Chen">third
+    <input type="submit" value="Query">
+  </form>
+ 
   <%
+  String lecturer_name = request.getParameter("lecturer");
+  <%if (lecturer_name == null) { %>
+    <h3>You have to select a lecturer:</h3>
+    <ul>
+  <%}
+  
+  if (lecturer_name == "Ziv"){%>
+  
+    <h3>You are right !!!</h3>
     
-    if (your_grade.value > 60) {
-  %>
-      <h2>Good job! you passed the course</h2>
+      <%}
+	  else{%>
+		  <h3>You are wrong !!!</h3>
+		
+	 <% } %>		
+
+    <a href="<%= request.getRequestURI() %>">BACK</a>
   <%
-    } else {
+  }
   %>
-      <h2>Not enough , you will need to do the course again! </h2>
-  <%
-    }
-  %>
-  <a href="<%= request.getRequestURI() %>"><h3>Try Again</h3></a>
 </body>
 </html>
