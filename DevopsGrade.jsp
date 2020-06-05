@@ -12,7 +12,7 @@
 		
 		
   <%
-    int grade = Integer.parseInt(request.getParameter("your_grade"));
+    int grade = Integer.parseInt(your_grade.value);
     if (grade > 60) {
   %>
       <h2>Good job! you passed the course</h2>
