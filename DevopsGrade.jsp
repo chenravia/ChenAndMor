@@ -11,7 +11,7 @@
     <input type="submit" value="Query">
   </form>
  
-  <%
+
   String lecturer_name = request.getParameter("lecturer");
   <%if (lecturer_name == null) { %>
     <h3>You have to select a lecturer:</h3>
