@@ -3,14 +3,14 @@
 <body>
 		<tr>
 		<td>Your grade:</td>
-		<td><input type="integer" name="your_grade" /></td>
+		<td><input type="text" name="your_grade" /></td>
 		</tr>
 		
 		<input type="submit" value="Submit" /></form>
 		
 		
   <%
-    int grade = request.getParameter("your_grade");
+    int grade = Integer.parseInt(request.getParameter("your_grade"));
     if (grade > 60) {
   %>
       <h2>Good job! you passed the course</h2><p>(<%= num %>)</p>
