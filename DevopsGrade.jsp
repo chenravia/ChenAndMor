@@ -13,12 +13,12 @@
  
 
   String lecturer_name = request.getParameter("lecturer");
-  <%if (lecturer_name == null) { %>
+  <%if (lecturer_name.value == null) { %>
     <h3>You have to select a lecturer:</h3>
     <ul>
   <%}
   
-  if (lecturer_name == "Ziv"){%>
+  if (lecturer_name.value == "Ziv"){%>
   
     <h3>You are right !!!</h3>
     
