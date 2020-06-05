@@ -5,15 +5,15 @@
 			<table style="with: 50%">
 		<tr>
 		<td>Your grade:</td>
-		<td><input type="text" name="your_grade" /></td>
+		<td><input type="number" name="your_grade" /></td>
 		</tr>
 		
 		<input type="submit" value="Submit" /></form>
 		
 		
   <%
-    int grade = Integer.parseInt(your_grade.value);
-    if (grade > 60) {
+    
+    if (your_grade.value > 60) {
   %>
       <h2>Good job! you passed the course</h2>
   <%
