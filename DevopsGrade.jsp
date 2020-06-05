@@ -15,7 +15,7 @@
 <%
 if(request.getParameter("lecturer") != null){
 	String selected = request.getParameter("lecturer");
-	if(selected.equals("Ziv"){
+	if(selected.equals("Ziv")){
 		out.println("You are right!");
 		
 	}
