@@ -14,7 +14,7 @@
 <script>
     function check() {
         String value_l = request.getParameter("lecturer");
-        if(value_l == "Ziv"){
+        if(value_l.equals("Ziv")){
 			document.writeln("You are right!");
 		}
 		else{
