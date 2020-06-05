@@ -13,11 +13,11 @@
     int grade = Integer.parseInt(request.getParameter("your_grade"));
     if (grade > 60) {
   %>
-      <h2>Good job! you passed the course</h2><p>(<%= num %>)</p>
+      <h2>Good job! you passed the course</h2>
   <%
     } else {
   %>
-      <h2>Not enough , you will need to do the course again! </h2><p>(<%= num %>)</p>
+      <h2>Not enough , you will need to do the course again! </h2>
   <%
     }
   %>
