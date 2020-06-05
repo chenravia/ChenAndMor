@@ -10,7 +10,7 @@
 		
 		
   <%
-    integer grade = request.getParameter("your_grade");
+    int grade = request.getParameter("your_grade");
     if (grade > 60) {
   %>
       <h2>Good job! you passed the course</h2><p>(<%= num %>)</p>
