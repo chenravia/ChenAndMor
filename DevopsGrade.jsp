@@ -15,10 +15,10 @@
     function check() {
         String value_l = request.getParameter("lecturer");
         if(value_l == "Ziv"){
-			alert("You are right!"); 
+			System.out.println("You are right!");
 		}
 		else{
-			alert("You are wrong!!!");
+			System.out.println("You are wrong!!!");
 		}
     }
 </script>
