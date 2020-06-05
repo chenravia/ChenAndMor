@@ -8,19 +8,24 @@
     <input type="radio" name="lecturer" value="Mor">Mor
     <input type="radio" name="lecturer" value="Ziv">Ziv
     <input type="radio" name="lecturer" value="Chen">Chen
-    <input type="submit" value="Query" onclick="check();">
+    <input type="submit" value="Query">
   </form>
  
-<script>
-    function check() {
-        String value_l = request.getParameter("lecturer");
-        if(param.lecturer == "Ziv"){
-			document.writeln("You are right!");
-		}
-		else{
-			document.writeln("You are wrong!!!");
-		}
-    }
-</script>
+
+<%
+if(request.getParameter("lecturer") != null){
+	String selected = request.getParameter("lecturer");
+	if(selected.equals("Ziv"){
+		out.println("You are right!");
+		
+	}
+	else{
+		
+		out.println("You are wrong!");
+	}	
+	
+}
+
+%>
 </body>
 </html>
