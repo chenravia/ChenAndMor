@@ -12,25 +12,7 @@
   </form>
  
 
-  String lecturer_name = request.getParameter("lecturer");
-  <%if (lecturer_name.value == null) { %>
-    <h3>You have to select a lecturer:</h3>
-    <ul>
-  <%}
-  
-  if (lecturer_name.value == "Ziv"){%>
-  
-    <h3>You are right !!!</h3>
-    
-      <%}
-	  else{%>
-		  <h3>You are wrong !!!</h3>
-		
-	 <% } %>		
-
-    <a href="<%= request.getRequestURI() %>">BACK</a>
-  <%
-  }
-  %>
+  String value= request.getParameter("lecturer");
+  System.out.println(value);
 </body>
 </html>
