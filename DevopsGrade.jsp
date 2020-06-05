@@ -8,7 +8,7 @@
     <input type="radio" name="lecturer" value="Mor">Mor
     <input type="radio" name="lecturer" value="Ziv">Ziv
     <input type="radio" name="lecturer" value="Chen">Chen
-    <input type="submit" value="Query" onclick="javascript:check();">
+    <input type="submit" value="Query" onclick="check();">
   </form>
  
 <script>
